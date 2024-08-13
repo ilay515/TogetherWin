@@ -1,15 +1,22 @@
 body {
     perspective: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the body takes up the full height of the viewport */
+    margin: 0;
 }
 
-#spinner-container {
+.spinner-container {
     position: absolute;
     width: 100%;
     left: 0;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-#spinner {
-    font-size: 3.0cqw;
+.spinner {
+    font-size: 18.0cqw;
     text-align: center;
     animation-name: spin, depth;
     animation-timing-function: linear;
